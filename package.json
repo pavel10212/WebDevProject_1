@@ -2,7 +2,7 @@
   "name": "project1",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://pavel10212.github.io/WebDevProject_1",
+  "homepage": "https://pavel10212.github.io/WebDevProject_1/",
   "type": "module",
   "scripts": {
     "predeploy": "pnpm run build",
