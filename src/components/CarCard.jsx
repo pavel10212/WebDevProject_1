@@ -104,6 +104,7 @@ const CarCard = ({car}) => {
               border-2 border-gray-100 
             "
                     />
+                    {/* Adding a button to favourite, right now not visible enough */}
                     <button
                         className="absolute top-3 right-2"
                         onClick={handleFavoriteToggle}

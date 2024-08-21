@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getCarData } from "../data/carData";
 import CarCard from "./CarCard";
 import { Button } from "../components/ui/button";
