@@ -1,10 +1,8 @@
-![statistics_preview](https://github.com/user-attachments/assets/0b78f9c4-06ac-4970-8f7e-2215d57cbdc0)# 🚗 CarMarket Dashboard
-
 ## 📌 Project Overview
 
 CarMarket Dashboard is a web application designed for market owners to efficiently manage and visualize their car inventory. Built with React.js and utilizing local storage for data persistence, this app provides insightful analytics and easy management of highlighted cars.
 
-![Dashboard Preview](https://github.com/pavel10212/WebDevProject_1/blob/main/images/dash_preview.png?raw=true)
+![statistics_preview](https://github.com/user-attachments/assets/0b78f9c4-06ac-4970-8f7e-2215d57cbdc0)# 🚗 CarMarket Dashboard
 
 ## 🌟 Features
 
@@ -17,9 +15,6 @@ CarMarket Dashboard is a web application designed for market owners to efficient
   - Select and showcase featured cars
   - Remove cars from the highlight list
   - Persistent highlights across sessions
-
-- **📱 Responsive Design:**
-  - Seamless experience across desktop and mobile devices
 
 - **📈 Data Visualization:**
   - Powered by Chart.js for dynamic and attractive charts
@@ -37,6 +32,14 @@ CarMarket Dashboard is a web application designed for market owners to efficient
 ### Statistics
 ![Statistics](https://github.com/pavel10212/WebDevProject_1/blob/main/images/statistics_preview.png?raw=true)
 
+### Cars
+![Cars](https://github.com/pavel10212/WebDevProject_1/blob/main/images/cars_preview.png?raw=true)
+
+### Hightlighted Cars
+![Highlighted Cars](https://github.com/pavel10212/WebDevProject_1/blob/main/images/highlightedCars_preview.png?raw=true)
+
+
+
 ## 🚀 Live Demo
 
 Check out the live application [here](https://pavel10212.github.io/WebDevProject_1/).
@@ -44,19 +47,19 @@ Check out the live application [here](https://pavel10212.github.io/WebDevProject
 ## 💻 Installation and Setup
 
 1. Clone the repository:
-git clone [https://github.com/pavel10212/carmarket-dashboard.git](https://github.com/pavel10212/WebDevProject_1.git)
+git clone [https://github.com/pavel10212/WebDevProject_1.git](https://github.com/pavel10212/WebDevProject_1.git)
 
 2. Navigate to the project directory:
 
-cd carmarket-dashboard
+    cd WebDevProject_1
 
 3. Install dependencies:
 
-npm install
+    pnpm install
 
 4. Start the development server:
 
-npm start
+    pnpm start
 
 
 ## 👥 Team Members
@@ -68,7 +71,5 @@ npm start
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/pavel10212/WebDevProject_1/issues).
-
-## 📝 License
 
 
