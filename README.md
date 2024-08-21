@@ -51,15 +51,15 @@ git clone [https://github.com/pavel10212/WebDevProject_1.git](https://github.com
 
 2. Navigate to the project directory:
 
-cd WebDevProject_1
+    cd WebDevProject_1
 
 3. Install dependencies:
 
-pnpm install
+    pnpm install
 
 4. Start the development server:
 
-pnpm start
+    pnpm start
 
 
 ## 👥 Team Members
