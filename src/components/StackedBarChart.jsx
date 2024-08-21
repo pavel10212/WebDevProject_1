@@ -1,4 +1,4 @@
-import { getCarData, getMakerData } from "@/data/carData";
+import { getCarData, getMakerData } from "../data/carData";
 import { useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
 

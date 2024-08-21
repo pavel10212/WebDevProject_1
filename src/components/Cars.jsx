@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { getCarData } from "@/data/carData";
+import { getCarData } from "../data/carData";
 import CarCard from "./CarCard";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 
 const ITEMS_PER_PAGE = 9;
 

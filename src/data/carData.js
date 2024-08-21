@@ -1,5 +1,5 @@
 export async function getCarData() {
-  const result = await fetch("/taladrod-cars.min.json")
+  const result = await fetch("./taladrod-cars.min.json")
     .then((response) => response.json())
     .then((data) => data);
   const cars = result.Cars;
@@ -7,7 +7,7 @@ export async function getCarData() {
 }
 
 export async function getCarCount() {
-  const result = await fetch("/taladrod-cars.min.json")
+  const result = await fetch("./taladrod-cars.min.json")
     .then((response) => response.json())
     .then((data) => data);
   const carCount = result.nCar;
@@ -15,7 +15,7 @@ export async function getCarCount() {
 }
 
 export async function getMakerData() {
-  const result = await fetch("/taladrod-cars.min.json")
+  const result = await fetch("./taladrod-cars.min.json")
     .then((response) => response.json())
     .then((data) => data);
   const makers = result.MMList;

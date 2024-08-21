@@ -1,7 +1,7 @@
 // HighlightedCars.js
 import { useEffect, useState } from "react";
-import { getFavouriteCars } from "@/data/favouriteCars";
-import { getCarData } from "@/data/carData";
+import { getFavouriteCars} from "../data/favouriteCars.js";
+import { getCarData } from "../data/carData.js";
 import CarCard from "./CarCard";
 
 const HighlightedCars = () => {

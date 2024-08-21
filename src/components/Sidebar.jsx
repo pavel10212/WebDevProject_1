@@ -7,7 +7,7 @@ const Sidebar = () => {
       <div className="p-5 border-b border-gray-700">
         <div className="flex justify-center mb-4">
           <img
-            src="/src/assets/logo.png"
+              src="./logo.png"
             alt="Car Manager Logo"
             className="rounded-full w-24 shadow-lg backdrop-brightness-200"
           />
@@ -17,18 +17,18 @@ const Sidebar = () => {
       <nav className="flex-grow">
         <ul className="p-4 space-y-2">
           <SidebarLink
-            to="/dashboard"
+            to="dashboard"
             icon={<LayoutDashboard size={20} />}
             text="Dashboard"
           />
-          <SidebarLink to="/cars" icon={<Home size={20} />} text="Cars" />
+          <SidebarLink to="cars" icon={<Home size={20} />} text="Cars" />
           <SidebarLink
-            to="/statistics"
+            to="statistics"
             icon={<BarChart2 size={20} />}
             text="Statistics"
           />
           <SidebarLink
-            to="/highlightedCars"
+            to="highlightedCars"
             icon={<Star size={20} />}
             text="Highlighted Cars"
           />

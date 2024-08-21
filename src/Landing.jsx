@@ -10,7 +10,7 @@ const Landing = () => {
         <p className="text-xl pt-10 text-slate-50">Your personal car market analyst.</p>
         <div className="mt-8">
           <Link
-            to="/dashboard"
+            to="dashboard"
             className="bg-red-400 hover:bg-red-800 text-white font-bold py-2 px-4 rounded"
           >
             Go to Dashboard

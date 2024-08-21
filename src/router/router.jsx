@@ -8,15 +8,15 @@ import Statistics from "../components/Statistics.jsx";
 
 const routes = [
   {
-    path: "/",
+    path: "/WebDevProject_1",
     element: <Landing />,
   },
   {
-    path: "/",
+    path: "/WebDevProject_1",
     element: <App />,
     children: [
       {
-        path: "dashboard",
+        path: "/WebDevProject_1/dashboard",
         element: <Dashboard />,
       },
       {
