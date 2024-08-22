@@ -1,10 +1,11 @@
 import { getCarData, getMakerData } from "../data/carData";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Bar } from "react-chartjs-2";
 
 const ModelPerMaker = () => {
   const [carData, setCarData] = useState([]);
   const [makerData, setMakerData] = useState([]);
+  const chartRef = useRef(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -39,20 +40,32 @@ const ModelPerMaker = () => {
     datasets: Object.values(aggregatedCarData),
   };
 
-  return (
-    <Bar
-      data={data}
-      options={{
-        plugins: {
-          title: {
-            display: false,
-          },
-          legend: {
-            display: false,
-          },
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      title: {
+        display: false,
+      },
+      legend: {
+        display: false,
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          autoSkip: true,
+          maxRotation: 45,
+          minRotation: 45,
         },
-      }}
-    />
+      },
+    },
+  };
+
+  return (
+    <div style={{ height: "50vh", width: "100%" }}>
+      <Bar ref={chartRef} data={data} options={options} />
+    </div>
   );
 };
 

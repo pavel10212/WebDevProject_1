@@ -11,7 +11,9 @@ const StatCard = ({ title, value, description, icon: Icon }) => (
   "
   >
     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-      <CardTitle className="text-lg font-bold text-slate-700">{title}</CardTitle>
+      <CardTitle className="text-lg font-bold text-slate-700">
+        {title}
+      </CardTitle>
       {Icon && <Icon className="h-4 w-4 text-slate-700" />}
     </CardHeader>
     <CardContent>

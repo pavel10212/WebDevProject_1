@@ -54,9 +54,16 @@ const CarMakerChart = ({ data }) => {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: "top",
+        position: "bottom",
+        labels: {
+          boxWidth: 12,
+          font: {
+            size: 10,
+          },
+        },
       },
       title: {
         display: false,
@@ -79,7 +86,7 @@ const CarMakerChart = ({ data }) => {
   };
 
   return (
-    <div className="flex justify-center items-center h-full">
+    <div style={{ height: "50vh", width: "100%" }}>
       <Pie data={chartData} options={options} />
     </div>
   );

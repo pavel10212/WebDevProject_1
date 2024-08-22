@@ -59,10 +59,19 @@ const CarMakerAveragePriceChart = ({ data }) => {
         display: false,
       },
     },
+    scales: {
+      x: {
+        ticks: {
+          autoSkip: true,
+          maxRotation: 45,
+          minRotation: 45,
+        },
+      },
+    },
   };
 
   return (
-    <div style={{ height: "600px", width: "100%" }}>
+    <div style={{ height: "50vh", width: "100%" }}>
       <Bar data={chartData} options={options} />
     </div>
   );

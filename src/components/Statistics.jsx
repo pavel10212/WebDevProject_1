@@ -149,7 +149,8 @@ const Statistics = () => {
       <Card
         className="
       bg-white
-      border-gray-500
+      border-4
+      border-red-500
         rounded-lg
         shadow-md
         w-full
@@ -168,7 +169,8 @@ const Statistics = () => {
       <Card
         className="mt-5 w-full border 
       bg-white
-      border-gray-500
+      border-4
+      border-red-500
         rounded-lg
         shadow-md"
       >
@@ -182,7 +184,8 @@ const Statistics = () => {
       <Card
         className="mt-5 w-full border 
       bg-white
-      border-gray-500
+      border-4
+      border-red-500
         rounded-lg
         shadow-md"
       >
