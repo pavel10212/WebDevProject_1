@@ -33,7 +33,6 @@ const CarMakerAveragePriceChart = ({ data }) => {
       {
         label: "Average Price",
         data: values,
-        //random color
         backgroundColor: [
           "rgba(255, 99, 132, 0.8)",
           "rgba(54, 162, 235, 0.8)",
@@ -71,7 +70,7 @@ const CarMakerAveragePriceChart = ({ data }) => {
   };
 
   return (
-    <div style={{ height: "50vh", width: "100%" }}>
+    <div style={{ height: "100%", width: "100%", minHeight: "300px" }}>
       <Bar data={chartData} options={options} />
     </div>
   );
