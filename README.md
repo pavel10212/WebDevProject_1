@@ -18,6 +18,9 @@ CarMarket Dashboard is a web application designed for market owners to efficient
 
 - **📈 Data Visualization:**
   - Powered by Chart.js for dynamic and attractive charts
+ 
+- **📱 Fully Responsive:**
+  - Fully responsive on mobile devices!
 
 ## 🛠️ Technologies Used
 
