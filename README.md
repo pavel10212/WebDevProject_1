@@ -38,6 +38,15 @@ CarMarket Dashboard is a web application designed for market owners to efficient
 ### Hightlighted Cars
 ![Highlighted Cars](https://github.com/pavel10212/WebDevProject_1/blob/main/images/highlightedCars_preview.png?raw=true)
 
+### Statistics mobile
+![Statistics](https://github.com/pavel10212/WebDevProject_1/blob/main/images/statistics_preview_mobile.png?raw=true)
+
+### Cars mobile
+![Cars](https://github.com/pavel10212/WebDevProject_1/blob/main/images/cars_preview_mobile.png?raw=true)
+
+### Hightlighted Cars mobile
+![Highlighted Cars](https://github.com/pavel10212/WebDevProject_1/blob/main/images/highlightedCars_preview_mobile.png?raw=true)
+
 
 
 ## 🚀 Live Demo
