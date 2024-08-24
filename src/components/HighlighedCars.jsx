@@ -22,6 +22,9 @@ const HighlightedCars = () => {
 
   return (
     <div>
+      <h1 className="text-3xl font-bold text-red-500 mb-4 text-center">
+        Highlighted Cars
+      </h1>
       {favouriteCars.length === 0 ? (
         <div className="text-2xl text-center font-bold rounded-lg text-red-500 mt-8">
           You have no cars saved!
