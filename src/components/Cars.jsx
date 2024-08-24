@@ -72,13 +72,11 @@ const Cars = () => {
 
   return (
     <div>
-      <div className="justify-center text-right">
-        <h1 className="text-3xl font-bold text-center text-red-500 mb-8">
-          Browse Cars
-        </h1>
+      <div className="flex flex-col items-center mb-8">
+        <h1 className="text-3xl font-bold text-red-500 mb-4">Browse Cars</h1>
         <input
           type="text"
-          className="mr-10 bg-slate-100 rounded-lg w-64 h-7 text-center"
+          className="bg-slate-100 rounded-lg w-64 h-12 px-4 text-center shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 border border-gray-300"
           placeholder="Search for a car"
           value={searchTerm}
           onChange={handleSearchChange}

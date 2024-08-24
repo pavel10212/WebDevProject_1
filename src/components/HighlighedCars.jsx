@@ -1,8 +1,8 @@
-// HighlightedCars.js
 import { useEffect, useState } from "react";
-import { getFavouriteCars} from "../data/favouriteCars.js";
+import { getFavouriteCars } from "../data/favouriteCars.js";
 import { getCarData } from "../data/carData.js";
 import CarCard from "./CarCard";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const HighlightedCars = () => {
   const [favouriteCars, setFavouriteCars] = useState([]);
@@ -20,27 +20,26 @@ const HighlightedCars = () => {
     fetchFavouriteCars();
   }, [favouriteCars]);
 
-  if (favouriteCars.length === 0) {
-    return (
-      <div
-        className="
-    text-2xl
-    text-center
-    font-bold
-    rounded-lg
-    text-red-500
-    mt-8
-    "
-      >
-        You have no cars saved!
-      </div>
-    );
-  }
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {favouriteCars.map((car) => (
-        <CarCard key={car.Cid} car={car} />
-      ))}
+    <div>
+      {favouriteCars.length === 0 ? (
+        <div className="text-2xl text-center font-bold rounded-lg text-red-500 mt-8">
+          You have no cars saved!
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {favouriteCars.map((car) => (
+            <CarCard key={car.Cid} car={car} />
+          ))}
+        </div>
+      )}
+      <div className="flex justify-center mt-8">
+        <Link to="../cars">
+          <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            Browse More Cars
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
