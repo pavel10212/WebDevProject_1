@@ -151,49 +151,53 @@ const Statistics = () => {
       bg-white
       border-4
       border-red-500
-        rounded-lg
-        shadow-md
-        w-full
-        text-center
+      rounded-lg
+      shadow-md
+      w-full
+      text-center
       "
       >
         <CardHeader>
           <CardTitle>Cars per Maker</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="" style={{ height: "600px" }}>
+          <div className="h-[300px] md:h-[600px]">
             <CarMakerChart data={carMakerIndividualCount} />
           </div>
         </CardContent>
       </Card>
+
       <Card
         className="mt-5 w-full border 
       bg-white
       border-4
       border-red-500
-        rounded-lg
-        shadow-md"
+      rounded-lg
+      shadow-md"
       >
         <CardHeader>
           <CardTitle>Average Price per Maker</CardTitle>
         </CardHeader>
         <CardContent>
-          <CarMakerAveragePriceChart data={averageOfEachMaker} />
+          <div className="h-[300px] md:h-[600px]">
+            <CarMakerAveragePriceChart data={averageOfEachMaker} />
+          </div>
         </CardContent>
       </Card>
+
       <Card
         className="mt-5 w-full border 
       bg-white
       border-4
       border-red-500
-        rounded-lg
-        shadow-md"
+      rounded-lg
+      shadow-md"
       >
         <CardHeader>
           <CardTitle>Models per Maker</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="w-full" style={{ height: "600px" }}>
+          <div className="h-[300px] md:h-[600px]">
             <ModelPerMaker data={mostPopularCars} />
           </div>
         </CardContent>

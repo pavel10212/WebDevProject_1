@@ -63,7 +63,7 @@ const ModelPerMaker = () => {
   };
 
   return (
-    <div style={{ height: "50vh", width: "100%" }}>
+    <div style={{ height: "100%", width: "100%", minHeight: "300px" }}>
       <Bar ref={chartRef} data={data} options={options} />
     </div>
   );
