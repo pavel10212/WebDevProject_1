@@ -36,17 +36,25 @@ const Sidebar = ({ isOpen, onClose }) => {
             to="dashboard"
             icon={<LayoutDashboard size={20} />}
             text="Dashboard"
+            onClose={onClose}
           />
-          <SidebarLink to="cars" icon={<Home size={20} />} text="Cars" />
+          <SidebarLink
+            to="cars"
+            icon={<Home size={20} />}
+            text="Cars"
+            onClose={onClose}
+          />
           <SidebarLink
             to="statistics"
             icon={<BarChart2 size={20} />}
             text="Statistics"
+            onClose={onClose}
           />
           <SidebarLink
             to="highlightedCars"
             icon={<Star size={20} />}
             text="Highlighted Cars"
+            onClose={onClose}
           />
         </ul>
       </nav>
@@ -54,11 +62,12 @@ const Sidebar = ({ isOpen, onClose }) => {
   );
 };
 
-const SidebarLink = ({ to, icon, text }) => (
+const SidebarLink = ({ to, icon, text, onClose }) => (
   <li>
     <Link
       to={to}
       className="flex items-center p-3 rounded-lg hover:bg-zinc-900 transition-colors duration-200"
+      onClick={onClose} // Call onClose when the link is clicked
     >
       {icon}
       <span className="ml-3">{text}</span>
